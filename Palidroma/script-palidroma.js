@@ -5,26 +5,25 @@ Creare una funzione per capire se la parola inserita è palindroma
 */
 
 // Creare prompt per inserire la parola 
-// Creare un ciclo for di lettura al contrario 
-// Creare la funzione di verifica della parola palindroma 
+// Creare un ciclo for di lettura al contrario in una funzione
 // creare il message di output 
 
+const insertWord = prompt('Inserisci una parola').toLowerCase();
 let message;
-let outword = ' ';
-const insertWord = prompt('Inserisci una parola');
-reverse(insertWord);
 
 
 function reverse(word){
-  for (let i = word.length -1; i > 0; i--){
+  let outword = '';
+  for (let i = word.length -1; i >= 0; i--){
      outword += word[i];
   }
+  return reverse;
 }
 
 if (insertWord === reverse(insertWord)){
-  message = `${insertWord} è una parola palindroma`;
+  message = 'È una parola palindroma';
  } else {
-  message = `${insertWord} NON è una parola palindroma`;
+  message = 'NON è una parola palindroma';
 }
 
 console.log(message);
