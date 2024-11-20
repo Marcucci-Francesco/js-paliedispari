@@ -20,7 +20,7 @@ function reverse(word){
   return reverse;
 }
 
-if (insertWord === reverse(insertWord)){
+if (reverse(insertWord)){
   message = 'È una parola palindroma';
  } else {
   message = 'NON è una parola palindroma';
